@@ -1,32 +1,46 @@
 # How to Create and Import Your CSV Data
 
+Follow these step-by-step instructions to format and import your pigeon data into **My Pigeon PH**.
+
+---
+
 ### Step 1: Open a Spreadsheet Program
-On your laptop or computer, open **Microsoft Excel** or any spreadsheet program.
+On your computer or laptop, open **Microsoft Excel**, **Google Sheets**, or any standard spreadsheet application.
 
-![Step 1 - Open Spreadsheet](csv_step1.jpg)
+---
 
-### Step 2: Set Up Headers and Add Entries
-Type out your column headers and fill in your pigeon information row by row. Make sure your headers match the required format:   
-* `No`, `RingNumber`, `Name`, `Sex`, `Color`, `Strain`, `Sire(Father)`, `Dam(Mother)`, `EyeColor`, `WingType`, `BodyShape`, `Behavior`, `Loft Section`, `RFID Tag`, `Status`, `KeyRecords`, `Remarks`
+### Step 2: Set Up Header Columns
+Create a new spreadsheet and set up the first row with the following exact column headers:
 
-![Step 2 - Fill Headers and Entries](csv_step2.jpg)
+| Band Number | Ring Color | Gender | Color | Eye Color | Strain | Hatch Date | Status |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 
-### Step 3: Save as a CSV File
-1. Click on **File**, then select **Save As**.   
-2. Name your file (for example: `mypigeonph_sample.csv`).   
-3. Under the **"Save as type"** dropdown menu, choose **CSV (Comma delimited) (*.csv)**, then click **Save**.   
+---
 
-![Step 3 - Save As CSV](csv_step3.jpg)
+### Step 3: Enter Your Pigeon Records
+Add your pigeon information row by row under the corresponding headers.
 
-**How to get the file onto your phone:**
-* **Option A (Google Drive):** Save the CSV file directly into your Google Drive.   
-* **Option B (Email Draft):** If you don't use Google Drive, email the file to yourself and save it as a draft. Then, open your phone's email app, open that draft, and download the CSV file to your phone's **Downloads** folder.   
+* **Band Number:** (Required) Unique identification ring number (e.g., `PHA-2026-123456`).
+* **Gender:** Enter `Cock` or `Hen`.
+* **Hatch Date:** Format as `YYYY-MM-DD` (e.g., `2026-03-15`).
+* **Status:** Active, Breeding, Racing, Retired, etc.
 
-### Step 4: Import into My Pigeon PH
-1. Open the **My Pigeon PH** app on your phone.   
-2. Go to **Settings**.   
-3. Tap on **CSV Import & Share Data**.   
-4. Select your CSV file to complete the import.   
+---
 
-### Step 5: Done!
-Your records are now successfully uploaded.
+### Step 4: Save or Export as CSV
+1. In your spreadsheet program, click **File > Save As** (or **Download**).
+2. Choose **CSV (Comma delimited) (*.csv)** as the file format.
+3. Save the file to your computer or transfer it to your phone's **Downloads** folder.
+
+---
+
+### Step 5: Import into My Pigeon PH
+1. Open **My Pigeon PH** on your Android device.
+2. Go to **Loft Management** or **Settings > Import / Export Data**.
+3. Tap **Import CSV Data** and select your saved `.csv` file.
+4. Review the preview screen and tap **Confirm Import**.
+
+---
+
+### Need Assistance?
+If you encounter errors during import, ensure your CSV headers match the required structure or reach out to developer support at **mypigeonph@gmail.com**.
