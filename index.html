@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>How to Delete Your Account and Data - My Pigeon PH</title>
+  <title>CSV Import Guide - My Pigeon PH</title>
   <style>
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -27,9 +27,10 @@
     a { color: #0366d6; text-decoration: none; }
     a:hover { text-decoration: underline; }
     code { background: #f3f4f6; padding: 2px 6px; border-radius: 4px; font-size: 0.9em; }
-    ul { padding-left: 20px; }
+    ul, ol { padding-left: 20px; }
     li { margin-bottom: 8px; }
     hr { border: 0; height: 1px; background: #eaecef; margin: 24px 0; }
+    img { max-width: 100%; height: auto; border: 1px solid #e1e4e8; border-radius: 6px; margin: 16px 0; }
     .footer {
       margin-top: 40px;
       padding-top: 20px;
@@ -42,46 +43,61 @@
 </head>
 <body>
   <div class="container">
-    <h1>How to Delete Your Account and Data</h1>
-    <p>You have two ways to remove your account, but <strong>if you have already deleted your account directly inside the app, there is no need to submit a request through the web portal.</strong></p>
+    <h1>How to Create and Import Your CSV Data</h1>
+    <p>Follow these step-by-step instructions to format and import your pigeon data into <strong>My Pigeon PH</strong>.</p>
 
     <hr>
 
-    <h2>Option 1: In-App Deletion (Recommended & Instant)</h2>
-    <p>If you delete your account directly through the app settings:</p>
+    <h2>Step 1: Open a Spreadsheet Program</h2>
+    <p>On your laptop or computer, open <strong>Microsoft Excel</strong> or any spreadsheet program.</p>
+    <img src="csv_step1.jpg" alt="Step 1 - Open Spreadsheet">
+
+    <hr>
+
+    <h2>Step 2: Set Up Headers and Add Entries</h2>
+    <p>Type out your column headers and fill in your pigeon information row by row. Make sure your headers match the required format:</p>
     <ul>
-      <li>Your cloud account profile and device binding metadata in Firestore are permanently removed immediately.</li>
-      <li><strong>No further portal deletion request is needed</strong>, as your data is already fully cleared from our servers.</li>
+      <li><code>No</code>, <code>RingNumber</code>, <code>Name</code>, <code>Sex</code>, <code>Color</code>, <code>Strain</code>, <code>Sire(Father)</code>, <code>Dam(Mother)</code>, <code>EyeColor</code>, <code>WingType</code>, <code>BodyShape</code>, <code>Behavior</code>, <code>Loft Section</code>, <code>RFID Tag</code>, <code>Status</code>, <code>KeyRecords</code>, <code>Remarks</code></li>
+    </ul>
+    <img src="csv_step2.jpg" alt="Step 2 - Format Headers and Add Data">
+
+    <hr>
+
+    <h2>Step 3: Save as a CSV File</h2>
+    <ol>
+      <li>Click on <strong>File</strong>, then select <strong>Save As</strong>.</li>
+      <li>Name your file (for example: <code>mypigeonph_sample.csv</code>).</li>
+      <li>Under the <strong>"Save as type"</strong> dropdown menu, choose <strong>CSV (Comma delimited) (*.csv)</strong>, then click <strong>Save</strong>.</li>
+    </ol>
+    <img src="csv_step3.jpg" alt="Step 3 - Save As CSV">
+
+    <hr>
+
+    <h3>How to get the file onto your phone:</h3>
+    <ul>
+      <li><strong>Option A (Google Drive):</strong> Save the CSV file directly into your Google Drive.</li>
+      <li><strong>Option B (Email Draft):</strong> If you don't use Google Drive, email the file to yourself and save it as a draft. Then, open your phone's email app, open that draft, and download the CSV file to your phone's <strong>Downloads</strong> folder.</li>
     </ul>
 
     <hr>
 
-    <h2>Option 2: Request via Web Portal or Email</h2>
-    <p>If you are unable to access the app and need to request cloud data removal manually:</p>
+    <h2>Step 4: Import into My Pigeon PH</h2>
     <ol>
-      <li>Contact developer support or visit our portal using your registered email address (<code>mypigeonph@gmail.com</code>).</li>
-      <li>Once processed, your <strong>User Profile</strong> (<code>users</code>) and <strong>Device Bindings</strong> (<code>devices</code>) stored in Firestore will be permanently purged.</li>
+      <li>Open the <strong>My Pigeon PH</strong> app on your phone.</li>
+      <li>Go to <strong>Settings</strong>.</li>
+      <li>Tap on <strong>CSV Import &amp; Share Data</strong>.</li>
+      <li>Select your CSV file to complete the import.</li>
     </ol>
 
     <hr>
 
-    <h2>What About Local Device Data & Files?</h2>
-    <p>Because the app operates offline:</p>
-    <ul>
-      <li>Deleting your online account (either in-app or via portal) <strong>does not</strong> automatically wipe local app data or files saved on your phone.</li>
-      <li><strong>To remove local app data:</strong> Uninstall the <strong>My Pigeon PH</strong> app from your phone or clear app data via your Android settings (<strong>Settings &gt; Apps &gt; My Pigeon PH &gt; Storage &gt; Clear Data</strong>).</li>
-      <li><strong>To remove saved exports and media:</strong> Manually delete your local files:
-        <ul>
-          <li>Backup files (<code>.mypigeonph</code> or <code>.json</code>), CSV files, PDF Genetics Certificates, and Fancier's Monthly Records in your phone's <strong>Downloads</strong> or document folders.</li>
-          <li>Exported pigeon cards saved in your <strong>Photos/Gallery</strong> app.</li>
-        </ul>
-      </li>
-    </ul>
+    <h2>Step 5: Done!</h2>
+    <p>Your records are now successfully uploaded.</p>
 
     <hr>
 
-    <h2>Need Help?</h2>
-    <p>For any data privacy inquiries or support, reach out to us at <code>mypigeonph@gmail.com</code>.</p>
+    <h2>Need Assistance?</h2>
+    <p>If you encounter errors during import, ensure your CSV headers match the required structure or reach out to developer support at <code>mypigeonph@gmail.com</code>.</p>
 
     <div class="footer">
       <p>&copy; 2026 NGage Curiosity Lab. All Rights Reserved.</p>
